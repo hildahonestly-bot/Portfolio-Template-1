@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Amaka Okoji | Strategy, Creative, Real Impact</title>
+<meta content="Amaka Okoji is a brand strategist and marketing leader helping ambitious brands grow, connect and create work that matters." name="description"/>
+<style>
+:root{
+  --black:#050505;
+  --cream:#f4efe5;
+  --orange:#f4511e;
+  --muted:#9b968e;
+  --line:rgba(244,239,229,.16);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--black);
+  color:var(--cream);
+  font-family:Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.page{max-width:1440px;margin:0 auto;overflow:hidden}
+
+/* NAV */
+.nav{
+  height:86px;
+  padding:0 50px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  position:relative;
+  z-index:10;
+}
+.logo{
+  font-size:17px;
+  letter-spacing:.17em;
+  font-weight:500;
+}
+.navlinks{
+  display:flex;
+  gap:42px;
+  font-size:13px;
+}
+.navlinks a{opacity:.9}
+.nav-cta{
+  justify-self:end;
+  border:1px solid rgba(244,239,229,.52);
+  border-radius:999px;
+  padding:11px 17px 11px 20px;
+  font-size:13px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:700px;
+  display:grid;
+  grid-template-columns:46% 54%;
+}
+.hero-copy{
+  position:relative;
+  z-index:4;
+  padding:92px 0 72px 52px;
+}
+.hero-title{
+  margin:0;
+  max-width:690px;
+  font-size:clamp(64px,6.45vw,103px);
+  line-height:.85;
+  letter-spacing:-.075em;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.hero-title .orange{color:var(--orange)}
+.hero-desc{
+  width:410px;
+  max-width:90%;
+  margin:24px 0 26px;
+  font-size:17px;
+  line-height:1.38;
+  letter-spacing:-.02em;
+}
+.outline-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:28px;
+  border:1px solid rgba(244,239,229,.58);
+  border-radius:999px;
+  padding:12px 17px 12px 21px;
+  font-size:13px;
+}
+.hero-visual{
+  position:absolute;
+  z-index:2;
+  right:-3px;
+  top:-4px;
+  width:64%;
+  height:735px;
+  overflow:hidden;
+  pointer-events:none;
+}
+.hero-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
+.hero-note{
+  position:absolute;
+  z-index:5;
+  right:54px;
+  bottom:76px;
+  width:145px;
+  transform:rotate(-6deg);
+  font-family:"Segoe Print","Bradley Hand",cursive;
+  font-size:25px;
+  line-height:1.05;
+  color:#f4efe5;
+}
+.hero-note:after{
+  content:"";
+  display:block;
+  width:92px;
+  height:3px;
+  background:var(--orange);
+  margin:6px 0 0 6px;
+  transform:rotate(-4deg);
+}
+
+/* WORK */
+.work{
+  position:relative;
+  z-index:6;
+  padding:0 50px 125px;
+}
+.section-label{
+  font-size:10px;
+  letter-spacing:.30em;
+  color:#aaa59c;
+  margin-bottom:18px;
+}
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+}
+.work-card{min-width:0}
+.work-image{
+  height:200px;
+  overflow:hidden;
+  background:#111;
+}
+.work-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.work-card:nth-child(1) .work-image img{object-position:center}
+.work-card:nth-child(2) .work-image img{object-position:center}
+.work-card:nth-child(3) .work-image img{object-position:center}
+.work-card:nth-child(4) .work-image img{object-position:center}
+.work-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:11px;
+  font-size:15px;
+}
+.work-arrow{font-size:19px}
+.work-sub{
+  color:#9f9a91;
+  font-size:12px;
+  margin-top:5px;
+}
+
+/* APPROACH */
+.approach{
+  border-top:1px solid var(--line);
+  padding:0 50px 130px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:90px;
+}
+.approach-left{padding-top:22px}
+.approach-title{
+  margin:0;
+  font-size:clamp(64px,6.2vw,99px);
+  line-height:.84;
+  letter-spacing:-.075em;
+  font-weight:900;
+}
+.approach-title .orange{color:var(--orange)}
+.approach-foot{
+  margin-top:25px;
+  color:#68645e;
+  font-size:9px;
+  letter-spacing:.34em;
+}
+.approach-right{padding-top:48px}
+.approach-intro{
+  max-width:365px;
+  margin:0 0 32px;
+  font-size:16px;
+  line-height:1.38;
+}
+.approach-list{border-top:1px solid var(--line)}
+.approach-row{
+  display:grid;
+  grid-template-columns:43px 1fr;
+  padding:13px 0;
+  border-bottom:1px solid rgba(244,239,229,.10);
+  font-size:14px;
+}
+.approach-num{color:#858079}
+.more-btn{margin-top:31px}
+
+/* FOOTER */
+.footer{
+  border-top:1px solid var(--line);
+  padding:72px 50px 38px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:70px;
+}
+.footer-title{
+  margin:0;
+  max-width:700px;
+  font-size:clamp(54px,6vw,91px);
+  line-height:.86;
+  letter-spacing:-.075em;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.footer-title .orange{color:var(--orange)}
+.footer-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:205px;
+}
+.footer-contact{
+  font-size:17px;
+  line-height:1.35;
+}
+.footer-contact a{text-decoration:underline;text-underline-offset:4px}
+.footer-links{
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+  font-size:12px;
+  color:#aaa59c;
+}
+.footer-bottom{
+  grid-column:1/-1;
+  border-top:1px solid rgba(244,239,229,.10);
+  padding-top:17px;
+  margin-top:38px;
+  display:flex;
+  justify-content:space-between;
+  color:#67635d;
+  font-size:9px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+/* RESPONSIVE */
+@media (max-width:1000px){
+  .nav{padding:0 30px}
+  .navlinks{gap:22px}
+  .hero{grid-template-columns:48% 52%;min-height:660px}
+  .hero-copy{padding-left:30px}
+  .hero-title{font-size:clamp(57px,7.2vw,78px)}
+  .hero-visual{width:62%;height:690px}
+  .work{padding-left:30px;padding-right:30px}
+  .work-image{height:175px}
+  .approach{padding-left:30px;padding-right:30px;gap:45px}
+  .footer{padding-left:30px;padding-right:30px}
+}
+@media (max-width:760px){
+  .nav{height:72px;grid-template-columns:1fr auto;padding:0 22px}
+  .navlinks{display:none}
+  .logo{font-size:15px}
+  .nav-cta{padding:9px 13px 9px 15px;gap:18px}
+  .hero{display:block;min-height:850px}
+  .hero-visual{
+    top:40px;
+    right:-24%;
+    width:112%;
+    height:730px;
+    opacity:.93;
+  }
+  .hero-copy{
+    padding:92px 22px 40px;
+    z-index:5;
+  }
+  .hero-title{
+    max-width:560px;
+    font-size:clamp(59px,15vw,100px);
+  }
+  .hero-desc{
+    width:330px;
+    font-size:15px;
+    margin-top:22px;
+  }
+  .hero-note{right:32px;bottom:75px}
+  .work{padding:0 22px 90px}
+  .work-grid{grid-template-columns:1fr 1fr;gap:25px 13px}
+  .work-image{height:170px}
+  .approach{
+    padding:0 22px 90px;
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+  .approach-right{padding-top:0}
+  .approach-title{font-size:clamp(62px,15vw,100px)}
+  .footer{
+    padding:58px 22px 28px;
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+  .footer-right{min-height:auto;gap:38px}
+  .footer-bottom{margin-top:20px}
+}
+@media (max-width:480px){
+  .hero{min-height:820px}
+  .hero-visual{right:-40%;width:132%;height:700px}
+  .hero-copy{padding-top:88px}
+  .hero-desc{max-width:300px}
+  .hero-note{font-size:21px;right:20px}
+  .work-grid{grid-template-columns:1fr}
+  .work-image{height:235px}
+  .footer-title{font-size:58px}
+  .footer-bottom{flex-direction:column;gap:10px}
+}
+
+.brand-rail{overflow:hidden;padding:34px 0 38px;border-top:1px solid rgba(0,0,0,.12);border-bottom:1px solid rgba(0,0,0,.12);background:#fff}
+.brand-rail-head{display:flex;justify-content:space-between;gap:20px;padding:0 5vw 24px;font-size:10px;letter-spacing:.16em;font-weight:700}
+.brand-marquee{overflow:hidden}
+.brand-track{display:flex;width:max-content;animation:brandPingPong 28s ease-in-out infinite alternate}
+.brand-set{display:flex;align-items:center;gap:clamp(42px,6vw,100px);padding:0 5vw}
+.brand-logo{height:42px;min-width:90px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.brand-logo img{display:block;max-width:120px;max-height:34px;width:auto;height:auto;object-fit:contain}
+@keyframes brandPingPong{from{transform:translateX(0)}to{transform:translateX(calc(-50% + 5vw))}}
+@media(max-width:700px){.brand-rail-head{padding-left:6vw;padding-right:6vw}.brand-set{gap:42px;padding:0 6vw}.brand-logo{min-width:72px}.brand-logo img{max-width:92px;max-height:28px}}
+
+
+/* TESTIMONIAL PORTRAIT PASS */
+.testimonial{overflow:hidden;}
+.testimonial-portrait{width:100%;aspect-ratio:1.22/1;overflow:hidden;margin:0 0 24px;background:#111;}
+.testimonial-portrait img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.92) contrast(1.02);}
+.testimonial .quote-mark{margin-bottom:16px;}
+.testimonial .person{flex-direction:row;align-items:center;gap:12px;}
+.testimonial .person-face{width:42px;height:42px;}
+@media(max-width:760px){.testimonial-portrait{aspect-ratio:1.45/1;margin-bottom:22px;}.testimonial .person{flex-direction:row;}}
+
+.testimonials{position:relative;}
+.testimonials-more{position:absolute;right:50px;top:24px;color:#8d8880;font-size:9px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;}
+.testimonials-more:hover{color:#f0ece4;}
+@media(max-width:760px){.testimonials-more{right:22px;top:24px;font-size:8px;}}
+</style>
+<style>
+/* Final integration pass: the portrait is a photographic layer, not a card. */
+.hero-visual{
+  width:66%;
+  right:-1%;
+  top:-8px;
+  height:750px;
+  mix-blend-mode:normal;
+  -webkit-mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.78) 10%, #000 25%, #000 100%);
+  mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.78) 10%, #000 25%, #000 100%);
+}
+.hero-visual img{
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(.98) contrast(1.03);
+}
+.hero-copy{max-width:700px}
+.work-card{
+  transition:transform .35s ease, opacity .35s ease;
+}
+@media (hover:hover) and (pointer:fine){
+  .work-card:hover{transform:translateY(-5px)}
+  .work-card:hover .work-image img{transform:scale(1.025)}
+}
+.work-image img{transition:transform .5s ease}
+.outline-btn,.nav-cta{transition:background .25s ease,color .25s ease,border-color .25s ease}
+@media (hover:hover) and (pointer:fine){
+  .outline-btn:hover,.nav-cta:hover{
+    background:var(--cream);
+    color:var(--black);
+    border-color:var(--cream);
+  }
+}
+</style>
+<style>
+/* Amaka portfolio additions */
+.metric-card{position:relative}
+.metric-card::after{
+  content:attr(data-impact);
+  position:absolute;
+  top:14px;
+  right:14px;
+  min-width:62px;
+  padding:9px 11px;
+  border-radius:999px;
+  background:#f4511e;
+  color:#050505;
+  font-weight:900;
+  font-size:17px;
+  line-height:1;
+  text-align:center;
+  opacity:0;
+  transform:translateY(8px) scale(.9);
+  transition:opacity .22s ease,transform .22s ease;
+  pointer-events:none;
+  z-index:3;
+}
+.metric-card::before{
+  content:attr(data-impact-label);
+  position:absolute;
+  top:57px;
+  right:14px;
+  padding:5px 8px;
+  background:#050505;
+  color:#f4efe5;
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:0;
+  transform:translateY(8px);
+  transition:opacity .22s ease,transform .22s ease;
+  z-index:3;
+}
+@media (hover:hover) and (pointer:fine){
+  .metric-card:hover::after,.metric-card:hover::before{opacity:1;transform:none}
+}
+
+</style>
+<style>
+/* Final hero image: the supplied Amaka portrait is the hero, not the mid-page image. */
+.hero-visual{
+  position:absolute;
+  z-index:2;
+  right:-1%;
+  top:-8px;
+  width:61%;
+  height:735px;
+  overflow:hidden;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.65) 11%, #000 26%, #000 100%);
+  mask-image:linear-gradient(to right, transparent 0%, rgba(0,0,0,.65) 11%, #000 26%, #000 100%);
+}
+.hero-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+  filter:saturate(.98) contrast(1.03);
+}
+.hero-copy{z-index:5}
+@media(max-width:760px){
+  .hero{display:block;min-height:850px}
+  .hero-copy{padding:92px 22px 40px;max-width:700px}
+  .hero-visual{
+    top:42px;
+    right:-30%;
+    width:118%;
+    height:760px;
+    opacity:.92;
+  }
+}
+</style>
+<style>
+/* APPROACH PRESENCE / MANIFESTO RING */
+.presence{
+  min-height:880px;
+  height:880px;
+  display:grid;
+  grid-template-columns:48.45% 51.55%;
+  border-top:1px solid var(--line);
+  background:#050505;
+  overflow:hidden;
+}
+.presence-image-full{
+  height:880px;
+  min-height:880px;
+  overflow:hidden;
+  background:#050505;
+  position:relative;
+}
+.presence-image-full img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+  transform:none;
+}
+.presence-values{
+  height:880px;
+  min-height:880px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#050505;
+}
+.presence-values:before{
+  content:"";
+  position:absolute;
+  width:470px;
+  height:650px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.012) 47%,rgba(255,255,255,.025) 50%,rgba(255,255,255,.008) 53%,transparent 100%);
+  filter:blur(20px);
+  pointer-events:none;
+}
+.manifesto-ring{
+  width:680px;
+  height:680px;
+  max-width:78%;
+  max-height:78%;
+  position:relative;
+  z-index:2;
+  animation:manifestoSpin 42s linear infinite;
+  transform-origin:center;
+}
+.manifesto-ring svg{
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
+.manifesto-ring .ring-track{
+  fill:none;
+  stroke:rgba(244,239,229,.08);
+  stroke-width:1.2;
+}
+.manifesto-ring text{
+  fill:#aaa59c;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:1.15px;
+  text-transform:uppercase;
+  paint-order:stroke fill;
+  stroke:rgba(0,0,0,.96);
+  stroke-width:3.5px;
+  filter:drop-shadow(2px 3px 0 rgba(255,255,255,.32)) drop-shadow(-3px -3px 5px rgba(0,0,0,1));
+}
+.manifesto-ring .ring-glint{
+  fill:none;
+  stroke:rgba(255,255,255,0);
+  stroke-width:1.2px;
+  paint-order:stroke;
+  filter:drop-shadow(0 0 5px rgba(255,255,255,.85));
+  animation:ringGlint 6.5s ease-in-out infinite;
+}
+@keyframes ringGlint{
+  0%,72%,100%{opacity:0;stroke:rgba(255,255,255,0)}
+  78%{opacity:.1;stroke:rgba(255,255,255,.15)}
+  84%{opacity:.95;stroke:rgba(255,255,255,.82)}
+  90%{opacity:.08;stroke:rgba(255,255,255,.12)}
+}
+@keyframes manifestoSpin{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+@media(max-width:900px){
+  .presence{height:auto;min-height:0;grid-template-columns:1fr}
+  .presence-image-full{height:680px;min-height:680px}
+  .presence-values{height:680px;min-height:680px}
+  .manifesto-ring{width:500px;height:500px}
+}
+@media(prefers-reduced-motion:reduce){.manifesto-ring{animation:none}}
+.presence-composite{
+  display:block;
+  height:clamp(620px, 48vw, 900px);
+  min-height:620px;
+  overflow:hidden;
+  padding:0;
+  background:#050505;
+}
+.presence-composite > img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center center;
+}
+@media(max-width:900px){
+  .presence-composite{height:620px;min-height:620px}
+  .presence-composite > img{object-position:center center}
+}
+
+</style>
+<style>
+/* Testimonial cards: restore the intended three-column editorial treatment */
+.testimonials{
+  border-top:1px solid var(--line);
+  padding:0 50px 110px;
+}
+.testimonials > .section-label{
+  padding-top:24px;
+  margin-bottom:26px;
+}
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(244,239,229,.12);
+  border-bottom:1px solid rgba(244,239,229,.12);
+}
+.testimonial{
+  min-width:0;
+  min-height:285px;
+  padding:25px 30px 27px 0;
+  display:flex;
+  flex-direction:column;
+}
+.testimonial + .testimonial{
+  border-left:1px solid rgba(244,239,229,.12);
+  padding-left:30px;
+}
+.quote-mark{
+  color:var(--orange);
+  font-family:Georgia,serif;
+  font-size:42px;
+  line-height:.7;
+  margin-bottom:18px;
+}
+.testimonial p{
+  margin:0;
+  max-width:420px;
+  font-size:15px;
+  line-height:1.45;
+  color:#f0ece4;
+}
+.person{
+  margin-top:auto;
+  padding-top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+.person strong{
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.person span{
+  font-size:10px;
+  color:#8d8880;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+@media(max-width:760px){
+  .testimonials{padding:0 22px 80px}
+  .testimonial-grid{grid-template-columns:1fr}
+  .testimonial{min-height:0;padding:25px 0 28px}
+  .testimonial + .testimonial{border-left:0;border-top:1px solid rgba(244,239,229,.12);padding-left:0}
+}
+</style>
+<style>
+/* Enrichment pass */
+.brand-rail{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0 17px;overflow:hidden;background:#050505}
+.brand-rail-head{padding:0 50px 12px;display:flex;justify-content:space-between;align-items:baseline;color:#77736d;font-size:9px;letter-spacing:.24em;text-transform:uppercase}
+.brand-rail-note{letter-spacing:.08em;color:#5f5b56}
+.brand-track{width:max-content;display:flex;align-items:center;gap:58px;padding:0 50px;animation:brandPingPong 28s ease-in-out infinite alternate}
+.brand-word{font-size:18px;letter-spacing:.03em;font-weight:800;white-space:nowrap;color:#d9d3c9}
+.brand-word:nth-child(2n){font-family:Georgia,serif;font-weight:600;font-style:italic}
+.brand-word:nth-child(3n){letter-spacing:.14em;font-size:14px}
+.brand-dot{width:4px;height:4px;background:var(--orange);border-radius:50%;flex:0 0 auto}
+@keyframes brandPingPong{from{transform:translateX(0)}to{transform:translateX(calc(-1 * (100vw - 260px)))}}
+@media(prefers-reduced-motion:reduce){.brand-track{animation:none}}
+.camera-roll{border-top:1px solid var(--line);padding:0 0 120px;overflow:hidden}
+.camera-roll .section-label{padding:24px 50px 0;margin-bottom:26px}
+.camera-track{display:flex;gap:12px;width:max-content;padding:0 50px;transform:rotate(-1deg)}
+.camera-item{width:220px;height:275px;position:relative;overflow:hidden;background:#111;flex:0 0 auto;background-size:cover;background-position:center}
+.camera-item:nth-child(2){height:315px;margin-top:-20px;transform:rotate(1.4deg)}
+.camera-item:nth-child(3){height:245px;margin-top:15px;transform:rotate(-1.8deg)}
+.camera-item:nth-child(4){height:295px;margin-top:-8px;transform:rotate(.8deg)}
+.camera-item:nth-child(5){height:255px;margin-top:20px;transform:rotate(-1deg)}
+.camera-item:nth-child(6){height:310px;margin-top:-15px;transform:rotate(1.5deg)}
+.camera-item:nth-child(7){height:270px;margin-top:7px;transform:rotate(-.7deg)}
+.camera-item:nth-child(8){height:300px;margin-top:-18px;transform:rotate(1.2deg)}
+.camera-item:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.4),transparent 35%);pointer-events:none}
+.camera-caption{position:absolute;left:12px;bottom:11px;z-index:2;padding:5px 7px;background:rgba(5,5,5,.82);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#f4efe5}
+@media(hover:hover) and (pointer:fine){.camera-item{transition:transform .3s ease}.camera-item:hover{transform:translateY(-6px) rotate(0deg)}}
+.stories{border-top:1px solid var(--line);padding:0 50px 125px}.stories>.section-label{padding-top:24px;margin-bottom:26px}
+.stories-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(244,239,229,.12)}
+.story{border-bottom:1px solid rgba(244,239,229,.12);padding:24px 32px 25px 0;cursor:pointer}.story:nth-child(odd){border-right:1px solid rgba(244,239,229,.12);padding-right:34px}.story:nth-child(even){padding-left:34px}
+.story-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.story h3{margin:0;max-width:620px;font-size:25px;line-height:1.02;letter-spacing:-.035em;font-weight:800}.story-arrow{font-size:18px;color:#aaa59c;transition:transform .25s ease}.story-meta{margin-top:12px;color:#8d8880;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+.story-body{max-height:0;overflow:hidden;opacity:0;transition:max-height .4s ease,opacity .3s ease}.story-body p{max-width:560px;margin:14px 0 0;color:#aaa59c;font-size:13px;line-height:1.45}.story.open .story-body{max-height:120px;opacity:1}.story.open .story-arrow{transform:rotate(45deg)}
+.roadmap{border-top:1px solid var(--line);padding:0 50px 125px;overflow:hidden}.roadmap>.section-label{padding-top:24px;margin-bottom:24px}.roadmap-intro{max-width:560px;margin:0 0 42px;font-size:17px;line-height:1.38}
+.roadmap-line{position:relative;display:grid;grid-template-columns:repeat(5,1fr)}.roadmap-line:before{content:"";position:absolute;left:0;right:0;top:13px;height:1px;background:rgba(244,239,229,.18)}
+.road-point{position:relative;padding-right:22px;cursor:pointer}.road-dot{position:relative;z-index:2;width:27px;height:27px;border:1px solid rgba(244,239,229,.35);border-radius:50%;background:#050505;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:9px;transition:background .2s ease,color .2s ease}.road-point.active .road-dot,.road-point:hover .road-dot{background:var(--orange);color:#050505;border-color:var(--orange)}
+.road-year{margin-top:17px;font-size:10px;letter-spacing:.18em;color:#8d8880;text-transform:uppercase}.road-title{margin-top:7px;font-size:17px;font-weight:700;line-height:1.05}.road-copy{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .25s ease}.road-point.active .road-copy{max-height:130px;opacity:1}.road-copy p{margin:10px 0 0;color:#99948c;font-size:12px;line-height:1.4;max-width:210px}
+.person{flex-direction:row;align-items:center;gap:11px}.person-face{width:38px;height:38px;border-radius:50%;overflow:hidden;flex:0 0 auto;background:#1a1a1a;border:1px solid rgba(244,239,229,.15)}.person-face img{width:100%;height:100%;display:block}.person-copy{display:flex;flex-direction:column;gap:4px}
+@media(max-width:760px){.brand-rail-head{padding-left:22px;padding-right:22px}.brand-track{padding-left:22px;padding-right:22px;gap:36px}.camera-roll .section-label{padding-left:22px}.camera-track{padding:0 22px}.stories{padding:0 22px 90px}.stories-grid{grid-template-columns:1fr}.story:nth-child(odd){border-right:0;padding-right:0}.story:nth-child(even){padding-left:0}.story h3{font-size:22px}.roadmap{padding:0 22px 90px}.roadmap-line{display:block;padding-left:25px}.roadmap-line:before{left:12px;right:auto;top:0;bottom:0;width:1px;height:auto}.road-point{padding:0 0 28px}.road-dot{position:absolute;left:-25px;top:0}.road-year{margin-top:0}.road-copy{max-height:none;opacity:1}.road-copy p{max-width:100%}}
+</style>
+<style>
+/* FINAL VISUAL DENSITY PASS */
+.brand-rail{padding:28px 0 32px;background:#050505;border-top:1px solid rgba(244,239,229,.12);border-bottom:1px solid rgba(244,239,229,.12)}
+.brand-rail-head{padding:0 50px 20px;color:#6f6b64;font-size:9px;letter-spacing:.22em;text-transform:uppercase}
+.brand-track{gap:0;padding:0;animation-duration:24s}
+.brand-set{gap:clamp(54px,7vw,110px);padding:0 50px}
+.brand-logo{height:48px;min-width:110px}
+.brand-logo img{max-width:130px;max-height:38px;filter:invert(1) brightness(1.8);opacity:.86}
+.brand-logo:nth-child(1) img,.brand-logo:nth-child(5) img,.brand-logo:nth-child(7) img{max-height:42px}
+@media(max-width:760px){.brand-rail{padding:22px 0 25px}.brand-rail-head{padding:0 22px 16px}.brand-set{gap:42px;padding:0 22px}.brand-logo{min-width:82px}.brand-logo img{max-width:92px;max-height:30px}}
+
+.camera-roll{padding-bottom:115px;background:#050505}
+.camera-roll .section-label{padding-top:24px;margin-bottom:32px}
+.camera-track{gap:18px;padding:0 50px;align-items:flex-start;transform:rotate(-.8deg)}
+.camera-item{width:260px;height:335px;background:#151515 center/cover no-repeat;box-shadow:0 18px 45px rgba(0,0,0,.35);border:1px solid rgba(244,239,229,.08)}
+.camera-item:nth-child(2){height:385px;margin-top:-24px}
+.camera-item:nth-child(3){height:295px;margin-top:20px}
+.camera-item:nth-child(4){height:350px;margin-top:-10px}
+.camera-item:nth-child(5){height:310px;margin-top:26px}
+.camera-item:nth-child(6){height:375px;margin-top:-18px}
+.camera-item:nth-child(7){height:325px;margin-top:10px}
+.camera-item:nth-child(8){height:360px;margin-top:-20px}
+.camera-item:after{background:linear-gradient(to top,rgba(5,5,5,.68),transparent 38%)}
+.camera-caption{font-size:8px;padding:6px 8px}
+@media(max-width:760px){.camera-track{padding:0 22px;gap:12px}.camera-item{width:190px;height:260px}.camera-item:nth-child(2){height:300px}.camera-item:nth-child(3){height:230px}.camera-item:nth-child(4){height:275px}.camera-item:nth-child(5){height:245px}.camera-item:nth-child(6){height:295px}.camera-item:nth-child(7){height:255px}.camera-item:nth-child(8){height:285px}}
+
+.services{border-top:1px solid var(--line);padding:0 50px 125px;overflow:hidden}
+.services>.section-label{padding-top:24px;margin-bottom:28px}
+.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid rgba(244,239,229,.14)}
+.service-item{min-height:220px;padding:28px 34px 30px 0;border-bottom:1px solid rgba(244,239,229,.14);display:grid;grid-template-columns:58px 1fr;gap:10px;position:relative;transition:background .25s ease;padding-left:0}
+.service-item:nth-child(odd){border-right:1px solid rgba(244,239,229,.14);padding-right:38px}
+.service-item:nth-child(even){padding-left:38px}
+.service-num{font-size:10px;letter-spacing:.14em;color:#77736d;padding-top:5px}
+.service-item h3{font-size:42px;line-height:.95;letter-spacing:-.045em;margin:0 0 18px;font-weight:800;text-transform:uppercase}
+.service-item p{max-width:390px;margin:0;color:#9d9890;font-size:13px;line-height:1.4}
+.service-item:after{content:'↗';position:absolute;right:20px;bottom:24px;font-size:22px;color:#77736d;transition:transform .25s ease,color .25s ease}
+.service-item:hover{background:#0a0a0a}.service-item:hover:after{transform:translate(4px,-4px);color:var(--orange)}
+@media(max-width:760px){.services{padding:0 22px 90px}.services-grid{grid-template-columns:1fr}.service-item,.service-item:nth-child(odd),.service-item:nth-child(even){min-height:175px;padding:24px 30px 25px 0;border-right:0}.service-item h3{font-size:31px}.service-item p{font-size:12px}}
+
+.roadmap{padding-bottom:110px}
+.roadmap-intro{font-size:20px;max-width:650px;margin-bottom:55px}
+.roadmap-line{min-height:235px}
+.road-year{font-size:11px;color:#aaa59c}
+.road-title{font-size:20px;max-width:220px}
+.road-point.active .road-copy{max-height:150px}
+
+.testimonials{padding-bottom:125px}
+.person-face{width:48px;height:48px}
+
+@media(prefers-reduced-motion:reduce){.brand-track{animation:none}}
+</style>
+<style>
+/* Testimonials: compact client portraits only */
+.testimonial-portrait{display:none!important;}
+.testimonial{min-height:250px;padding-top:24px;}
+.testimonial .person{margin-top:auto;display:flex;flex-direction:row;align-items:center;gap:12px;}
+.testimonial .person-face{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:0 0 auto;background:#1a1a1a;border:1px solid rgba(244,239,229,.16);}
+.testimonial .person-face img{width:100%;height:100%;object-fit:cover;display:block;}
+@media(max-width:760px){.testimonial{min-height:0;}.testimonial .person{flex-direction:row;}}
+</style><style>
+/* Intentional editorial camera-roll collage */
+.camera-roll{border-top:1px solid var(--line);padding:0 0 120px;overflow:hidden}
+.camera-head{display:flex;align-items:center;justify-content:space-between;padding:24px 50px 28px}
+.camera-link{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.camera-collage{display:grid;grid-template-columns:1.35fr .82fr .82fr;grid-template-rows:360px 260px 340px 300px;gap:12px;padding:0 50px}
+.camera-photo{position:relative;margin:0;overflow:hidden;background:#111;min-width:0}
+.camera-photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.camera-photo:hover img{transform:scale(1.025)}
+.camera-photo figcaption{position:absolute;left:14px;bottom:14px;padding:6px 8px;background:rgba(5,5,5,.78);color:#f4efe5;font-size:8px;line-height:1;letter-spacing:.11em;text-transform:uppercase}
+.photo-brainstorm{grid-column:1 / 3;grid-row:1 / 2}
+.photo-networking{grid-column:3;grid-row:1 / 3}
+.photo-field{grid-column:1;grid-row:2}
+.photo-workshop{grid-column:2;grid-row:2}
+.photo-shoot{grid-column:1 / 2;grid-row:3}
+.photo-activation{grid-column:2 / 4;grid-row:3}
+.photo-walk{grid-column:1 / 3;grid-row:4}
+.photo-home{grid-column:3;grid-row:4}
+@media (max-width:800px){
+ .camera-head{padding:22px 20px}
+ .camera-collage{grid-template-columns:1fr 1fr;grid-template-rows:250px 220px 220px 250px 250px;gap:8px;padding:0 20px}
+ .photo-brainstorm{grid-column:1 / 3;grid-row:1}
+ .photo-networking{grid-column:1;grid-row:2 / 4}
+ .photo-field{grid-column:2;grid-row:2}
+ .photo-workshop{grid-column:2;grid-row:3}
+ .photo-shoot{grid-column:1 / 3;grid-row:4}
+ .photo-activation{grid-column:1;grid-row:5}
+ .photo-walk{grid-column:2;grid-row:5}
+ .photo-home{display:none}
+}
+@media (max-width:520px){
+ .camera-collage{grid-template-columns:1fr;grid-template-rows:260px 230px 230px 230px 260px 260px 230px}
+ .photo-brainstorm,.photo-networking,.photo-field,.photo-workshop,.photo-shoot,.photo-activation,.photo-walk{grid-column:1;grid-row:auto}
+ .photo-home{display:block;grid-column:1;grid-row:auto;height:230px}
+}
+</style>
+<style id="camera-roll-two-row">
+.camera-roll{overflow:hidden;position:relative;padding:7.5rem 0 8rem;background:#050505}
+.camera-roll .section-kicker-row{display:flex;justify-content:space-between;align-items:center;padding:0 4vw;margin-bottom:2.5rem}
+.camera-roll .section-kicker,.camera-roll .section-note{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#777}
+.camera-rows{display:flex;flex-direction:column;gap:1.15rem;width:100%}
+.camera-track{display:flex;gap:1.15rem;width:max-content;will-change:transform}
+.camera-track-forward{animation:cameraForward 48s linear infinite}
+.camera-track-reverse{animation:cameraReverse 52s linear infinite}
+.camera-frame{position:relative;flex:0 0 auto;margin:0;overflow:visible}
+.camera-frame img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.96);border-radius:0}
+.camera-frame figcaption{position:absolute;left:10px;bottom:9px;background:#f1eee5;color:#151515;padding:5px 8px 4px;font-family:"Comic Sans MS","Bradley Hand","Segoe Print",cursive;font-size:10px;line-height:1;transform:rotate(-2deg);box-shadow:0 1px 5px rgba(0,0,0,.18);white-space:nowrap}
+.camera-frame:nth-child(3n) figcaption{transform:rotate(2deg)}
+.camera-frame:nth-child(4n) figcaption{transform:rotate(-4deg)}
+.frame-wide{width:25vw;height:15vw;min-width:280px;min-height:170px}
+.frame-tall{width:17vw;height:19vw;min-width:190px;min-height:220px}
+.frame-medium{width:21vw;height:17vw;min-width:230px;min-height:190px}
+.camera-track:hover{animation-play-state:paused}
+@keyframes cameraForward{from{transform:translateX(-7%)}to{transform:translateX(-39%)}}
+@keyframes cameraReverse{from{transform:translateX(-34%)}to{transform:translateX(-3%)}}
+@media (prefers-reduced-motion:reduce){
+  .camera-track{animation:none}
+}
+@media (max-width:700px){
+  .camera-roll{padding:5rem 0}
+  .camera-roll .section-kicker-row{padding:0 5vw}
+  .camera-track{gap:.7rem}
+  .frame-wide{width:62vw;height:38vw;min-width:0;min-height:0}
+  .frame-tall{width:43vw;height:52vw;min-width:0;min-height:0}
+  .frame-medium{width:52vw;height:43vw;min-width:0;min-height:0}
+  .camera-frame figcaption{font-size:8px;left:7px;bottom:7px}
+}
+</style>
+<style id="final-approved-fixes">
+/* FINAL APPROVED FIXES */
+.brand-rail-head{display:block!important;padding-bottom:24px!important}
+.brand-rail-head span{display:block!important}
+.brand-set{white-space:nowrap!important}
+.brand-logo{min-width:96px!important;flex:0 0 96px!important}
+.brand-logo img{max-width:120px!important;max-height:34px!important}
+.work{padding-top:clamp(46px,6vw,96px)!important}
+.work-head{margin-bottom:30px!important}
+.metric-card::after{content:attr(data-impact)!important;white-space:nowrap!important;min-width:auto!important}
+.metric-card::before{content:attr(data-impact-label)!important}
+.footer-links{display:flex!important;align-items:center!important;gap:20px!important}
+.footer-links .social-logo{display:flex!important;width:18px!important;height:18px!important;align-items:center!important;justify-content:center!important}
+.footer-links .social-logo img{width:16px!important;height:16px!important;object-fit:contain!important;display:block!important}
+.camera-rows{display:flex!important;flex-direction:column!important;gap:12px!important;overflow:hidden!important}
+.camera-track{display:flex!important;gap:12px!important;width:max-content!important}
+.camera-track-forward{animation:cameraForwardFinal 52s linear infinite!important}
+.camera-track-reverse{animation:cameraReverseFinal 56s linear infinite!important}
+.camera-frame.camera-full{width:clamp(250px,24vw,390px)!important;height:auto!important;aspect-ratio:1.195/1!important;min-width:0!important;min-height:0!important;flex:0 0 auto!important;overflow:visible!important}
+.camera-frame.camera-full img{display:block!important;width:100%!important;height:100%!important;aspect-ratio:1.195/1!important;object-fit:contain!important;object-position:center center!important;background:#090909!important}
+.camera-frame.camera-full figcaption{font-family:"Comic Sans MS","Bradley Hand","Segoe Print",cursive!important;z-index:2!important}
+@keyframes cameraForwardFinal{from{transform:translateX(2vw)}to{transform:translateX(calc(-50% + 2vw))}}
+@keyframes cameraReverseFinal{from{transform:translateX(calc(-50% + 2vw))}to{transform:translateX(2vw)}}
+@media(max-width:700px){
+ .camera-frame.camera-full{width:72vw!important;aspect-ratio:1.195/1!important}
+ .camera-frame.camera-full img{aspect-ratio:1.195/1!important}
+ .brand-logo{min-width:72px!important;flex-basis:72px!important}
+ .brand-logo img{max-width:92px!important;max-height:28px!important}
+}
+</style>
+<style id="responsive-qa-final">
+/* Final responsive QA. Keeps the approved desktop composition and tightens mobile behavior. */
+@media (max-width: 760px){
+  .page{width:100%;overflow:hidden}
+  .nav{position:relative;padding:0 20px;min-height:72px}
+  .logo{font-size:14px;letter-spacing:.14em;white-space:nowrap}
+  .nav-cta{font-size:11px;padding:8px 12px 8px 14px;gap:12px}
+  .hero{min-height:820px;overflow:hidden}
+  .hero-copy{padding:82px 20px 34px;max-width:100%;position:relative}
+  .hero-title{font-size:clamp(54px,14.4vw,86px);line-height:.84;letter-spacing:-.07em;max-width:90vw}
+  .hero-desc{width:min(310px,78vw);max-width:78vw;font-size:14px;line-height:1.4}
+  .hero-visual{top:40px;right:-34%;width:120%;height:735px}
+  .hero-note{right:20px;bottom:62px;width:125px;font-size:20px}
+  .work{padding:44px 20px 82px}
+  .work-head{gap:16px;align-items:end}
+  .work-grid{grid-template-columns:1fr;gap:30px}
+  .work-image{height:auto;aspect-ratio:1.5/1}
+  .work-meta{font-size:14px}
+  .work-sub{font-size:11px}
+  .work-desc{font-size:12px;line-height:1.42}
+  .approach,.services,.stories,.roadmap,.testimonials,.footer{padding-left:20px;padding-right:20px}
+  .approach-title{font-size:clamp(58px,14.5vw,92px)}
+  .services-grid,.stories-grid,.testimonial-grid{grid-template-columns:1fr}
+  .camera-roll .section-kicker-row{padding-left:20px;padding-right:20px}
+}
+@media (max-width: 480px){
+  .nav{padding:0 18px}
+  .nav-cta{font-size:10px}
+  .hero{min-height:790px}
+  .hero-copy{padding-top:80px}
+  .hero-title{font-size:clamp(52px,14.6vw,72px)}
+  .hero-desc{font-size:13px;width:280px;max-width:78vw}
+  .hero-visual{right:-43%;width:132%;height:690px}
+  .hero-note{right:16px;bottom:56px;font-size:18px}
+  .work-image{aspect-ratio:1.45/1}
+}
+</style>
+</head>
+<body>
+<div class="page" id="top">
+<header class="nav">
+<a class="logo" href="#top">AMAKA OKOJI</a>
+<nav aria-label="Primary" class="navlinks">
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#services">Services</a>
+<a href="#journal">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+</header>
+<main>
+<section class="hero" id="about">
+<div class="hero-copy">
+<h1 class="hero-title">STRATEGY<br/>CREATIVE<br/><span class="orange">REAL</span> IMPACT.</h1>
+<p class="hero-desc">I’m Amaka Okoji, a brand strategist and marketing leader helping ambitious brands grow, connect and create work that matters.</p>
+<a class="outline-btn" href="#work">See My Work <span>↗</span></a>
+</div>
+<div class="hero-note">Better<br/>Brands.<br/>A Bolder<br/>Africa.</div>
+<div aria-hidden="true" class="hero-visual">
+<img alt="" src="assets/hero.png"/>
+</div>
+</section>
+<section aria-label="Selected brand references" class="brand-rail">
+<div class="brand-rail-head"><span>SELECTED BRAND REFERENCES</span></div>
+<div class="brand-marquee">
+<div class="brand-track">
+<div class="brand-set">
+<div class="brand-logo"><img alt="Nike" src="https://cdn.simpleicons.org/nike/111111"/></div>
+<div class="brand-logo"><img alt="Google" src="https://cdn.simpleicons.org/google/111111"/></div>
+<div class="brand-logo"><img alt="Spotify" src="https://cdn.simpleicons.org/spotify/111111"/></div>
+<div class="brand-logo"><img alt="Coca-Cola" src="https://cdn.simpleicons.org/cocacola/111111"/></div>
+<div class="brand-logo"><img alt="Netflix" src="https://cdn.simpleicons.org/netflix/111111"/></div>
+<div class="brand-logo"><img alt="adidas" src="https://cdn.simpleicons.org/adidas/111111"/></div>
+<div class="brand-logo"><img alt="Apple" src="https://cdn.simpleicons.org/apple/111111"/></div>
+<div class="brand-logo"><img alt="Airbnb" src="https://cdn.simpleicons.org/airbnb/111111"/></div>
+<div class="brand-logo"><img alt="MTN" src="https://cdn.simpleicons.org/mtn/111111"/></div>
+<div class="brand-logo"><img alt="Flutterwave" src="https://cdn.simpleicons.org/flutterwave/111111"/></div>
+</div>
+<div aria-hidden="true" class="brand-set">
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/nike/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/google/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/spotify/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/cocacola/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/netflix/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/adidas/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/apple/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/airbnb/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/mtn/111111"/></div>
+<div class="brand-logo"><img alt="" src="https://cdn.simpleicons.org/flutterwave/111111"/></div>
+</div>
+</div>
+</div>
+</section>
+<section class="work" id="work"><div class="work-head"><div class="section-label">FEATURED WORK</div><a class="section-link" href="#contact">VIEW ALL WORK  →</a></div>
+<div class="work-grid">
+<article class="work-card metric-card" data-impact="82% qualified leads" data-impact-label="growth strategy">
+<div class="work-image"><img alt="NOVA project" src="assets/nova.png"/></div>
+<div class="work-meta"><span>NOVA</span><span class="work-arrow">↗</span></div>
+<div class="work-sub">Growth Strategy &amp; Activation</div><p class="work-desc">Growth strategy and activation for a fintech brand turning product awareness into everyday use.</p>
+</article>
+<article class="work-card metric-card" data-impact="2,000 sign-ups" data-impact-label="launch strategy">
+<div class="work-image"><img alt="MERO project" src="assets/mero.png"/></div>
+<div class="work-meta"><span>MERO</span><span class="work-arrow">↗</span></div>
+<div class="work-sub">Product Distribution &amp; Sales</div><p class="work-desc">Product distribution and sales strategy for a beauty brand built around expressive, digital-first demand.</p>
+</article>
+<article class="work-card metric-card" data-impact="91% brand recall" data-impact-label="brand direction">
+<div class="work-image"><img alt="VELORA project" src="assets/velora.png"/></div>
+<div class="work-meta"><span>VELORA</span><span class="work-arrow">↗</span></div>
+<div class="work-sub">Brand Strategy &amp; Growth</div><p class="work-desc">Brand strategy and growth work for a body-care brand competing in a crowded self-care category.</p>
+</article>
+<article class="work-card metric-card" data-impact="4 channels aligned" data-impact-label="creative systems">
+<div class="work-image"><img alt="PERIOD! campaign" src="assets/period.png"/></div>
+<div class="work-meta"><span>PERIOD!</span><span class="work-arrow">↗</span></div>
+<div class="work-sub">Art Direction Campaign</div><p class="work-desc">Campaign direction for a menstrual-health platform built around education, access and participation.</p>
+</article>
+</div>
+</section>
+<section aria-label="A few things Amaka has done" class="camera-roll"><div class="section-kicker-row"><span class="section-kicker">A FEW THINGS I'VE DONE</span><span class="section-note">A LITTLE CAMERA ROLL</span></div><div aria-label="Selected moments from Amaka Okoji's work and life" class="camera-rows"><div class="camera-track camera-track-forward"><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-01.jpg"/><figcaption>late night strategy session</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-02.jpg"/><figcaption>networking night</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-03.jpg"/><figcaption>field notes</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-04.jpg"/></figure></div><div class="camera-track camera-track-reverse"><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-05.jpg"/><figcaption>on set</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-06.jpg"/><figcaption>this one was fun</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-07.jpg"/><figcaption>outside the office</figcaption></figure><figure class="camera-frame camera-full"><img alt="Selected moment from Amaka Okoji’s work and life" src="assets/camera-08.jpg"/></figure></div></div></section>
+<section class="stories" id="stories"><div class="stories-head"><div class="section-label">SELECTED STORIES</div><a class="section-link" href="#contact">MORE ALL STORIES  →</a></div>
+<div class="stories-grid"><article class="story"><div class="story-top"><h3>How I moved NOVA from awareness to action.</h3><span class="story-arrow">↗</span></div><div class="story-meta">NOVA / Growth &amp; Acquisition</div><div class="story-body"><p>A strategic shift that turned product awareness into everyday action, from audience insight through activation.</p></div></article><article class="story"><div class="story-top"><h3>The road to 50 million users for MERO.</h3><span class="story-arrow">↗</span></div><div class="story-meta">MERO / Scale &amp; Marketing Strategy</div><div class="story-body"><p>The positioning, channel choices and growth loops behind a large user-growth ambition.</p></div></article><article class="story"><div class="story-top"><h3>From a crowded category to a brand people remembered at VELORA.</h3><span class="story-arrow">↗</span></div><div class="story-meta">VELORA / Positioning &amp; Brand Strategy</div><div class="story-body"><p>The strategic shift that gave a familiar body-care product a sharper point of view and more ownable territory.</p></div></article><article class="story"><div class="story-top"><h3>What changed when PERIOD! stopped making content for everyone.</h3><span class="story-arrow">↗</span></div><div class="story-meta">PERIOD! / Audience &amp; Content</div><div class="story-body"><p>How a tighter audience definition changed the editorial system, channel choices and commercial usefulness.</p></div></article><article class="story"><div class="story-top"><h3>Building the NOVA launch people could actually participate in.</h3><span class="story-arrow">↗</span></div><div class="story-meta">NOVA / Campaign &amp; Community</div><div class="story-body"><p>How a launch moved beyond broadcast messaging into participation, conversation and repeat engagement.</p></div></article><article class="story"><div class="story-top"><h3>When VELORA’s strategy had to survive the real world.</h3><span class="story-arrow">↗</span></div><div class="story-meta">VELORA / Execution &amp; Leadership</div><div class="story-body"><p>Turning a strong strategic idea into decisions a team could execute under pressure.</p></div></article></div>
+</section>
+<section class="roadmap" id="roadmap"><div class="road-head"><div class="section-label">HOW I GOT HERE</div><a class="section-link" href="#contact">A SHORT VERSION  →</a></div>
+<p class="roadmap-intro">A small record of the moves that shaped the way I work today. Click a point on the line.</p>
+<div class="roadmap-line">
+<article class="road-point active"><div class="road-dot">01</div><div class="road-year">2018</div><div class="road-title">Started in communications</div><div class="road-copy"><p>Learned how audiences, stories and culture shape the way brands are understood.</p></div></article>
+<article class="road-point"><div class="road-dot">02</div><div class="road-year">2020</div><div class="road-title">Moved into marketing</div><div class="road-copy"><p>Started connecting creative ideas to acquisition, growth and commercial outcomes.</p></div></article>
+<article class="road-point"><div class="road-dot">03</div><div class="road-year">2022</div><div class="road-title">Led bigger brand work</div><div class="road-copy"><p>Worked across positioning, campaigns and teams where strategy had to become execution.</p></div></article>
+<article class="road-point"><div class="road-dot">04</div><div class="road-year">2024</div><div class="road-title">Strategy became the centre</div><div class="road-copy"><p>Built a practice around solving the business problem before choosing the creative answer.</p></div></article>
+<article class="road-point"><div class="road-dot">05</div><div class="road-year">Now</div><div class="road-title">Building what matters</div><div class="road-copy"><p>Working across brand, marketing and creative direction for ambitious teams and founders.</p></div></article>
+</div>
+</section>
+<section class="approach" id="approach">
+<div class="approach-left">
+<div class="section-label">MY APPROACH</div>
+<h2 class="approach-title">PEOPLE<br/>IDEAS<br/><span class="orange">EXECUTION</span></h2>
+<div class="approach-foot">BRANDS   PEOPLE   OPPORTUNITIES   A BOLDER AFRICA</div>
+</div>
+<div class="approach-right">
+<p class="approach-intro">I combine strategy, creativity and real world execution to help brands and people move from ideas to measurable progress.</p>
+<div class="approach-list">
+<div class="approach-row"><span class="approach-num">01</span><span>Understand the real problem</span></div>
+<div class="approach-row"><span class="approach-num">02</span><span>Build a clear strategy</span></div>
+<div class="approach-row"><span class="approach-num">03</span><span>Create compelling work</span></div>
+<div class="approach-row"><span class="approach-num">04</span><span>Drive results and keep improving</span></div>
+</div>
+<a class="outline-btn more-btn" href="#contact">More About Me <span>↗</span></a>
+</div>
+</section>
+<section class="services" id="services">
+<div class="section-label">WHAT I DO</div>
+<div class="services-grid">
+<article class="service-item"><span class="service-num">01</span><div><h3>Brand Strategy</h3><p>Positioning, audience, market and brand strategy.</p></div></article>
+<article class="service-item"><span class="service-num">02</span><div><h3>Marketing Strategy</h3><p>Growth, campaigns, content and channel strategy.</p></div></article>
+<article class="service-item"><span class="service-num">03</span><div><h3>Creative Direction</h3><p>Turning strategic thinking into distinctive creative work.</p></div></article>
+<article class="service-item"><span class="service-num">04</span><div><h3>Campaigns &amp; Launches</h3><p>Building the strategic and creative system around moments that need to move.</p></div></article>
+</div>
+</section>
+<section aria-label="How Amaka works" class="presence presence-motion">
+<div class="presence-photo">
+<img alt="Amaka Okoji seated in an office chair, viewed from above" src="assets/presence.png"/>
+</div>
+<div aria-hidden="true" class="presence-ring-panel">
+<div class="manifesto-ring"><img alt="" src="assets/manifesto-ring.png"/></div>
+<div class="manifesto-caption">VALUES / HOW I WORK</div>
+</div>
+</section>
+<section class="testimonials" id="journal">
+<div class="section-label">WHAT PEOPLE SAY</div><a class="testimonials-more" href="#journal">MORE TESTIMONIALS  →</a>
+<div class="testimonial-grid">
+<article class="testimonial">
+<div class="quote-mark">“</div>
+<p>Amaka came into the room asking better questions than everyone else. The strategy gave the team a direction we could actually use.</p>
+<div class="person"><div class="person-face"><img alt="Portrait of testimonial client" src="assets/testimonial-01.jpg"/></div><div class="person-copy"><strong>Chioma A.</strong><span>Founder, Mero</span></div></div>
+</article>
+<article class="testimonial">
+<div class="quote-mark">“</div>
+<p>She found the commercial opportunity inside what looked like a creative problem. That changed how we approached the entire launch.</p>
+<div class="person"><div class="person-face"><img alt="Portrait of testimonial client" src="assets/testimonial-02.jpg"/></div><div class="person-copy"><strong>David K.</strong><span>Growth Lead, Nova</span></div></div>
+</article>
+<article class="testimonial">
+<div class="quote-mark">“</div>
+<p>There is a rare combination of taste and execution in her work. You leave the room knowing exactly what needs to happen next.</p>
+<div class="person"><div class="person-face"><img alt="Portrait of testimonial client" src="assets/testimonial-03.jpg"/></div><div class="person-copy"><strong>Sarah O.</strong><span>Brand Director, Velora</span></div></div>
+</article>
+</div>
+</section>
+<footer class="footer" id="contact">
+<div class="footer-signature">AMAKA OKOJI</div><h2 class="footer-title">LET'S BUILD<br/><span class="orange">BETTER</span><br/>BRANDS.</h2>
+<div class="footer-right">
+<div class="footer-contact">
+          Have a brand, product or idea that needs a smarter marketing direction?<br/><br/>
+<a href="mailto:hello@amakaokoji.studio">hello@amakaokoji.studio</a>
+</div>
+<div class="footer-links"><a aria-label="Instagram" class="social-logo" href="#" title="Instagram"><img alt="Instagram" src="https://cdn.simpleicons.org/instagram/f4efe5"/></a><a aria-label="LinkedIn" class="social-logo" href="#" title="LinkedIn"><img alt="LinkedIn" src="https://cdn.simpleicons.org/linkedin/f4efe5"/></a><a aria-label="Threads" class="social-logo" href="#" title="Threads"><img alt="Threads" src="https://cdn.simpleicons.org/threads/f4efe5"/></a><a aria-label="X" class="social-logo" href="#" title="X"><img alt="X" src="https://cdn.simpleicons.org/x/f4efe5"/></a></div>
+</div>
+<div class="footer-bottom">
+<span>AMAKA OKOJI © 2026</span>
+<span>STRATEGY · CREATIVE · REAL IMPACT</span>
+</div>
+</footer>
+</main>
+</div>
+<script>
+    <section class="camera-roll" id="camera-roll">
+  <div class="section-kicker-row">
+    <span class="section-kicker">A FEW THINGS I'VE DONE</span>
+    <span class="section-note">A LITTLE CAMERA ROLL</span>
+  </div>
+
+  <div class="camera-rows" aria-label="Selected moments from Amaka's work and life">
+    <div class="camera-track camera-track-forward">
+      <figure class="camera-frame frame-wide">
+        <img src="assets/hero.png" alt="Creative strategy session on the studio floor">
+        <figcaption>late night strategy session</figcaption>
+      </figure>
+      <figure class="camera-frame frame-tall">
+        <img src="https://cdn.simpleicons.org/nike/111111" alt="Networking event">
+        <figcaption>talking through it</figcaption>
+      </figure>
+      <figure class="camera-frame frame-medium">
+        <img src="https://cdn.simpleicons.org/google/111111" alt="Field research at a market">
+        <figcaption>field notes</figcaption>
+      </figure>
+      <figure class="camera-frame frame-wide">
+        <img src="https://cdn.simpleicons.org/spotify/111111" alt="Informal workshop">
+        <figcaption>somewhere between idea + execution</figcaption>
+      </figure>
+      <figure class="camera-frame frame-tall">
+        <img src="https://cdn.simpleicons.org/cocacola/111111" alt="Creative direction on a campaign shoot">
+        <figcaption>on set</figcaption>
+      </figure>
+    </div>
+
+    <div class="camera-track camera-track-reverse">
+      <figure class="camera-frame frame-tall">
+        <img src="https://cdn.simpleicons.org/netflix/111111" alt="Brand activation event">
+        <figcaption>this one was fun</figcaption>
+      </figure>
+      <figure class="camera-frame frame-wide">
+        <img src="https://cdn.simpleicons.org/adidas/111111" alt="Walking and talking with colleagues">
+        <figcaption>outside the office</figcaption>
+      </figure>
+      <figure class="camera-frame frame-medium">
+        <img src="https://cdn.simpleicons.org/apple/111111" alt="Working from a home studio">
+        <figcaption>made something today</figcaption>
+      </figure>
+      <figure class="camera-frame frame-wide">
+        <img src="https://cdn.simpleicons.org/airbnb/111111" alt="Colourful street moment">
+        <figcaption>client day</figcaption>
+      </figure>
+      <figure class="camera-frame frame-tall">
+        <img src="https://cdn.simpleicons.org/mtn/111111" alt="Creative collaboration">
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+  const points=[...document.querySelectorAll('.road-point')];
+  points.forEach(point => point.addEventListener('click', () => { points.forEach(p => p.classList.remove('active')); point.classList.add('active'); }));
+})();
+</script>
+<script>
+(() => {
+  document.querySelectorAll('.story').forEach(story => story.addEventListener('click', () => story.classList.toggle('open')));
+  const points=[...document.querySelectorAll('.road-point')];
+  points.forEach(point => point.addEventListener('click', () => { points.forEach(p => p.classList.remove('active')); point.classList.add('active'); }));
+})();
+</script>
+<script>
+(() => {
+  const root = document.querySelector('.page');
+  if (!root) return;
+  const nav = root.querySelector('.nav');
+  const links = [...root.querySelectorAll('.navlinks a')];
+  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const bar = document.createElement('div');
+  bar.setAttribute('aria-hidden','true');
+  bar.style.cssText = 'position:fixed;top:0;left:0;height:2px;width:0;background:#f4511e;z-index:9999;transform-origin:left center;pointer-events:none;';
+  document.body.appendChild(bar);
+
+  const update = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (max > 0 ? Math.min(100, Math.max(0, window.scrollY / max * 100)) : 0) + '%';
+    const y = window.scrollY + 140;
+    let current = sections[0];
+    sections.forEach(sec => { if (sec.offsetTop <= y) current = sec; });
+    links.forEach(a => a.style.opacity = a.getAttribute('href') === '#' + current.id ? '1' : '.62');
+  };
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+</script>
+<style>
+/* Exact manifesto reference supplied by the user */
+.presence-values{
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#050505;
+}
+.manifesto-reference{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+}
+@media(max-width:900px){
+  .manifesto-reference{object-fit:cover;object-position:center center;}
+}
+</style>
+<style>
+/* FINAL MANIFESTO SECTION: preserve the original two-panel composition */
+.presence-motion{
+  display:grid;
+  grid-template-columns:50% 50%;
+  height:calc(50vw * .92516);
+  min-height:0;
+  padding:0;
+  border-top:1px solid var(--line);
+  background:#050505;
+  overflow:hidden;
+}
+.presence-photo,.presence-ring-panel{
+  min-width:0;
+  height:100%;
+  overflow:hidden;
+}
+.presence-photo{background:#050505}
+.presence-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center center;
+}
+.presence-ring-panel{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#050505;
+}
+.manifesto-ring{
+  width:min(620px,72%);
+  height:min(620px,72%);
+  position:relative;
+  z-index:2;
+  animation:manifestoSpin 42s linear infinite;
+  transform-origin:center;
+}
+.manifesto-ring svg{width:100%;height:100%;overflow:visible;display:block}
+.manifesto-ring .ring-track{
+  fill:none;
+  stroke:rgba(244,239,229,.055);
+  stroke-width:1;
+}
+.ring-rotor{transform-origin:300px 300px}
+.ring-text,.ring-glint-text{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.85px;
+  text-transform:uppercase;
+  paint-order:stroke fill;
+  stroke:rgba(7,7,7,.98);
+  stroke-width:3.4px;
+}
+.ring-text{
+  fill:url(#ringMetal);
+  filter:drop-shadow(1.5px 2px 0 rgba(255,255,255,.34)) drop-shadow(-2.5px -2.5px 4px rgba(0,0,0,1));
+}
+.ring-glint-text{
+  fill:url(#glintGradient);
+  opacity:.0;
+  filter:drop-shadow(0 0 5px rgba(255,248,225,.85));
+  animation:ringSweep 6.8s ease-in-out infinite;
+}
+@keyframes ringSweep{
+  0%,64%,100%{opacity:0}
+  72%{opacity:.10}
+  79%{opacity:.96}
+  86%{opacity:.05}
+}
+@keyframes manifestoSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(max-width:900px){
+  .presence-motion{grid-template-columns:1fr;height:auto;min-height:0}
+  .presence-photo{height:auto;aspect-ratio:922 / 853}
+  .presence-ring-panel{height:620px}
+  .manifesto-ring{width:360px;height:360px;max-width:72%;max-height:72%}
+}
+@media(prefers-reduced-motion:reduce){.manifesto-ring,.ring-glint-text{animation:none}}
+.manifesto-caption{
+  position:absolute;
+  left:50%;
+  bottom:7.5%;
+  transform:translateX(-50%);
+  font-size:11px;
+  letter-spacing:3px;
+  color:rgba(244,239,229,.42);
+  white-space:nowrap;
+  z-index:3;
+}
+@media(max-width:900px){
+  .manifesto-caption{bottom:6%;font-size:10px;letter-spacing:2.5px}
+}
+</style>
+<script></script>
+<style>
+/* APPROVED VISUAL REFINEMENT */
+.work-head,.stories-head,.road-head,.camera-head{display:flex;align-items:baseline;justify-content:space-between;gap:30px}
+.work-head .section-label,.stories-head .section-label,.road-head .section-label{margin:0}
+.section-link,.camera-link{color:#77736d;text-decoration:none;font-size:9px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;transition:color .2s ease}
+.section-link:hover,.camera-link:hover{color:#f4511e}
+
+/* Brand rail: substantial enough to read as social proof */
+.brand-rail{padding:24px 0 27px;background:#050505;border-top:1px solid rgba(244,239,229,.12);border-bottom:1px solid rgba(244,239,229,.12)}
+.brand-rail-head{padding:0 50px 18px;color:#77736d;font-size:9px;letter-spacing:.22em}
+.brand-set{gap:clamp(58px,7vw,112px);padding:0 50px}
+.brand-logo{height:54px;min-width:112px}
+.brand-logo img{max-width:132px;max-height:40px;filter:invert(1) brightness(1.85);opacity:.9}
+.brand-logo:nth-child(1) img,.brand-logo:nth-child(5) img,.brand-logo:nth-child(7) img{max-height:44px}
+
+/* Camera archive: editorial collage rather than an empty horizontal strip */
+.camera-roll{padding:0 0 105px;background:#050505;border-top:1px solid var(--line);overflow:hidden}
+.camera-head{padding:24px 50px 27px}
+.camera-head .section-label{padding:0;margin:0}
+.camera-grid{display:grid;grid-template-columns:1.15fr .82fr 1fr 1.05fr .82fr;grid-auto-rows:190px;gap:14px;padding:0 50px}
+.camera-item{position:relative;min-width:0;height:auto!important;margin:0!important;transform:none!important;overflow:hidden;background:#111 center/cover no-repeat;border:1px solid rgba(244,239,229,.08);box-shadow:0 16px 38px rgba(0,0,0,.28);transition:transform .35s ease,filter .35s ease}
+.camera-item.wide{grid-column:span 2}
+.camera-item.tall{grid-row:span 2}
+.camera-item:after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,5,.72),transparent 48%);pointer-events:none}
+.camera-caption{position:absolute;left:12px;bottom:11px;z-index:2;padding:6px 8px;background:rgba(5,5,5,.84);font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:#f4efe5}
+.camera-item:hover{transform:translateY(-5px) scale(1.01)!important;filter:brightness(1.08)}
+
+/* Stories */
+.stories{padding-bottom:105px}
+.stories-head{padding-top:24px;margin-bottom:26px}
+.stories>.section-label{padding-top:0;margin-bottom:0}
+
+/* Roadmap */
+.road-head{padding-top:24px;margin-bottom:24px}
+.roadmap>.section-label{padding-top:0;margin-bottom:0}
+
+/* Approach */
+.approach{min-height:430px}
+.approach-left{padding-right:30px}
+.approach-right{padding-left:50px}
+
+/* Services: four equal editorial cards */
+.services{padding-bottom:105px}
+.services>.section-label{padding-top:24px;margin-bottom:25px}
+.services-grid{grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(244,239,229,.14)}
+.service-item,.service-item:nth-child(odd),.service-item:nth-child(even){min-height:205px;padding:25px 24px 28px;border-right:1px solid rgba(244,239,229,.14);border-bottom:1px solid rgba(244,239,229,.14);display:block}
+.service-item:last-child{border-right:0}
+.service-num{display:block;margin-bottom:22px}
+.service-item h3{font-size:31px;line-height:.94;margin:0 0 15px}
+.service-item p{font-size:11px;line-height:1.4;max-width:230px}
+.service-item:after{right:18px;bottom:18px;font-size:17px}
+
+/* Testimonials */
+.testimonials{padding-bottom:105px}
+.testimonial{min-height:270px}
+
+@media(max-width:900px){
+  .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-item:nth-child(2){border-right:0}
+  .service-item:nth-child(3){border-right:1px solid rgba(244,239,229,.14)}
+  .camera-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:170px}
+  .camera-item.wide{grid-column:span 2}
+}
+@media(max-width:760px){
+  .work-head,.stories-head,.road-head,.camera-head{padding-left:22px;padding-right:22px}
+  .brand-set{gap:42px;padding:0 22px}.brand-rail-head{padding-left:22px;padding-right:22px}
+  .camera-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:175px;padding:0 22px;gap:10px}
+  .camera-item.wide{grid-column:span 2}.camera-item.tall{grid-row:span 2}
+  .services{padding-left:22px;padding-right:22px}.services-grid{grid-template-columns:1fr}
+  .service-item,.service-item:nth-child(odd),.service-item:nth-child(even){min-height:175px;border-right:0!important;padding:24px 28px 25px 0}
+  .service-item h3{font-size:31px}.service-item p{font-size:12px}
+  .approach-right{padding-left:0}
+}
+</style></body>
+
+<style id="final-mobile-responsive-qa">
+/* Final mobile QA pass. Preserve the approved art direction while removing desktop-fixed spacing. */
+.nav .logo::before,.nav .logo::after{content:none!important;display:none!important}
+@media (max-width:760px){
+  .nav{height:68px;min-height:68px;padding:0 20px;grid-template-columns:1fr auto;align-items:center}
+  .nav .logo{display:block!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;line-height:1!important;letter-spacing:.14em!important;white-space:nowrap!important;color:var(--cream)!important}
+  .nav .nav-cta{align-self:center;justify-self:end;font-size:11px;line-height:1;padding:10px 13px 10px 15px;gap:12px}
+
+  .hero{min-height:790px!important;height:auto;overflow:hidden}
+  .hero-copy{padding:78px 20px 34px!important;max-width:100%;position:relative;z-index:5}
+  .hero-title{font-size:clamp(54px,14.3vw,78px)!important;line-height:.84!important;letter-spacing:-.07em!important;max-width:91vw!important}
+  .hero-desc{width:min(310px,78vw)!important;max-width:78vw!important;font-size:14px!important;line-height:1.4!important;margin-top:22px!important}
+  .hero-visual{top:28px!important;right:-43%!important;width:132%!important;height:700px!important}
+  .hero-note{right:17px!important;bottom:48px!important;width:125px!important;font-size:19px!important}
+
+  /* The manifesto is a stacked mobile composition. Each panel owns its height. */
+  .presence-motion{display:block!important;height:auto!important;min-height:0!important;overflow:hidden!important}
+  .presence-photo{width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1.08/1!important;overflow:hidden!important}
+  .presence-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important}
+  .presence-ring-panel{width:100%!important;height:390px!important;min-height:390px!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important}
+  .presence-ring-panel .manifesto-ring{width:min(270px,64vw)!important;height:min(270px,64vw)!important;max-width:none!important;max-height:none!important}
+  .presence-ring-panel .manifesto-caption{bottom:22px!important;font-size:9px!important;letter-spacing:2.2px!important}
+}
+@media (max-width:480px){
+  .nav{padding:0 18px}
+  .nav .logo{font-size:13px!important}
+  .hero{min-height:770px!important}
+  .hero-copy{padding-top:76px!important}
+  .hero-title{font-size:clamp(52px,14.6vw,72px)!important}
+  .hero-desc{font-size:13px!important;width:280px!important}
+  .hero-visual{right:-43%!important;width:132%!important;height:680px!important}
+  .hero-note{right:16px!important;bottom:50px!important;font-size:18px!important}
+  .presence-photo{aspect-ratio:1.06/1!important}
+  .presence-ring-panel{height:350px!important;min-height:350px!important}
+  .presence-ring-panel .manifesto-ring{width:245px!important;height:245px!important}
+  .presence-ring-panel .manifesto-caption{bottom:20px!important}
+}
+</style>
+<script>
+(function(){
+  const nav=document.querySelector('.nav');
+  if(!nav) return;
+  const logo=nav.querySelector('.logo');
+  if(logo){
+    logo.textContent='AMAKA OKOJI';
+    [...nav.children].forEach(el=>{
+      if(el!==logo && el.textContent.trim()==='AMAKA OKOJI') el.remove();
+    });
+  }
+})();
+</script>
+</html>
+<style>
+/* V2 art-direction pass */
+.hero-copy{margin-top:-8px}
+.hero-title{font-size:clamp(68px,6.7vw,104px);max-width:700px}
+.hero-desc{margin-top:30px}
+.hero-note{right:55px;bottom:52px}
+.presence{
+  min-height:650px;
+  grid-template-columns:1.04fr .96fr;
+}
+.presence-image{min-height:650px}
+.presence-words{
+  min-height:650px;
+}
+
+.footer{padding-top:122px}
+.footer::before{
+  top:16px;
+  color:rgba(210,190,145,.13);
+  font-size:clamp(72px,12vw,172px);
+  letter-spacing:-.085em;
+}
+@media(max-width:760px){
+  .hero{min-height:620px}
+  .hero-copy{padding:92px 22px 70px}
+  .hero-title{font-size:clamp(62px,16vw,100px)}
+  .presence-image,
+  .footer{padding-top:105px}
+}
+</style>
+<style>
+.presence-words{
+  isolation:isolate;
+}
+.presence-words:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border:1px solid rgba(244,239,229,.06);
+  border-radius:50%;
+}
+.orbit span{
+  background:#050505;
+  padding:0 7px;
+}
+.orbit-core{
+  background:#050505;
+  padding:13px;
+}
+</style>
+<style>
+.footer{position:relative;}
+.footer-signature{
+  position:absolute;
+  top:45px;
+  left:50px;
+  color:#cdbb8e;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(17px,2vw,26px);
+  letter-spacing:.22em;
+  font-weight:500;
+  z-index:2;
+}
+@media(max-width:760px){
+  .footer-signature{left:22px;top:40px}
+}
+</style><style>
+/* FINAL RING: independent asset, separate from Amaka image */
+.presence-ring-panel{position:relative;display:flex;align-items:center;justify-content:center;background:#050505;}
+.manifesto-ring{position:relative;width:600px;aspect-ratio:1;flex:0 0 auto;animation:manifestoSpin 42s linear infinite;transform-origin:center;}
+.manifesto-ring img{width:100%;height:100%;display:block;object-fit:contain;}
+.manifesto-caption{position:absolute;left:50%;bottom:7.5%;transform:translateX(-50%);font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.28em;color:rgba(244,239,229,.45);white-space:nowrap;}
+@keyframes manifestoSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(max-width:900px){.manifesto-ring{width:min(360px,68%)}.manifesto-caption{bottom:5%;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.manifesto-ring{animation:none}}
+</style>
+<style id="FINAL_MOBILE_OVERRIDE">
+/* FINAL OVERRIDE: mobile layout only. This block intentionally comes last. */
+.nav .logo::before,.nav .logo::after{content:none!important;display:none!important}
+@media (max-width:760px){
+  .nav{height:68px!important;min-height:68px!important;padding:0 20px!important;grid-template-columns:1fr auto!important;align-items:center!important}
+  .nav .logo{display:block!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;line-height:1!important;letter-spacing:.14em!important;white-space:nowrap!important;color:var(--cream)!important}
+  .nav .nav-cta{align-self:center!important;justify-self:end!important;font-size:11px!important;line-height:1!important;padding:10px 13px 10px 15px!important;gap:12px!important}
+  .hero{min-height:790px!important;height:auto!important;overflow:hidden!important}
+  .hero-copy{padding:78px 20px 34px!important;max-width:100%!important;position:relative!important;z-index:5!important}
+  .hero-title{font-size:clamp(54px,14.3vw,78px)!important;line-height:.84!important;letter-spacing:-.07em!important;max-width:91vw!important}
+  .hero-desc{width:min(310px,78vw)!important;max-width:78vw!important;font-size:14px!important;line-height:1.4!important;margin-top:22px!important}
+  .hero-visual{top:28px!important;right:-43%!important;width:132%!important;height:700px!important}
+  .hero-note{right:17px!important;bottom:48px!important;width:125px!important;font-size:19px!important}
+  .presence-motion{display:block!important;height:auto!important;min-height:0!important;overflow:hidden!important}
+  .presence-photo{width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1.08/1!important;overflow:hidden!important}
+  .presence-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important}
+  .presence-ring-panel{width:100%!important;height:390px!important;min-height:390px!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important}
+  .presence-ring-panel .manifesto-ring{width:min(270px,64vw)!important;height:min(270px,64vw)!important;max-width:none!important;max-height:none!important}
+  .presence-ring-panel .manifesto-caption{bottom:22px!important;font-size:9px!important;letter-spacing:2.2px!important}
+}
+@media (max-width:480px){
+  .nav{padding:0 18px!important}
+  .nav .logo{font-size:13px!important}
+  .hero{min-height:770px!important}
+  .hero-copy{padding-top:76px!important}
+  .hero-title{font-size:clamp(52px,14.6vw,72px)!important}
+  .hero-desc{font-size:13px!important;width:280px!important}
+  .hero-visual{right:-43%!important;width:132%!important;height:680px!important}
+  .hero-note{right:16px!important;bottom:50px!important;font-size:18px!important}
+  .presence-photo{aspect-ratio:1.06/1!important}
+  .presence-ring-panel{height:350px!important;min-height:350px!important}
+  .presence-ring-panel .manifesto-ring{width:245px!important;height:245px!important}
+  .presence-ring-panel .manifesto-caption{bottom:20px!important}
+}
+</style>
+<script>
+(function(){
+  const nav=document.querySelector('.nav');
+  if(!nav) return;
+  const logo=nav.querySelector('.logo');
+  if(logo){
+    logo.textContent='AMAKA OKOJI';
+    [...nav.children].forEach(el=>{
+      if(el!==logo && el.textContent.trim()==='AMAKA OKOJI') el.remove();
+    });
+  }
+})();
+</script>
